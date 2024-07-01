@@ -1,4 +1,3 @@
-// Consigna 1:Crear un algoritmo con un condicional.
 // Función para verificar si el cliente obtiene un descuento
 function verificarDescuento() {
     let totalPedido = parseFloat(prompt("Ingrese el total de su pedido:"));
@@ -17,7 +16,6 @@ function verificarDescuento() {
 }
 verificarDescuento();
 
-// Consigna 2: Crear un algoritmo utilizando un ciclo:
 // Función para calcular la cuenta total con propina
 function calculoCuentaTotal() {
     let numeroPlatos = parseInt(prompt("¿Cuántos platos ha pedido?"));
