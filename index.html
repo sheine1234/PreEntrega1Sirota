@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simuladores</title>
+    <title>Aieka Jewish Teen Center</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
+    <!-- seccion home -->
+    <section class="container-fluid bg-dark text-white text-center home-section">
+        <div class="row align-items-center" style="height: 100vh;">
+            <div class="col">
+                <h1 class="display-4">Aieka Jewish Teen Center</h1>
+                <a href="#menuSection" class="btn btn-light mt-3">Hacé tu pedido</a>
+            </div>
+        </div>
+    </section>
+    <!-- seccion menu -->
+    <div class="container mt-5" id="menuSection">
+        <h1 class="text-center mb-4">Food Menu</h1>
+        <div class="row" id="menuCompleto">
+            <!-- Menú generado por JavaScript -->
+        </div>
+    </div>
+    <!-- seccion carrito -->
+    <div class="container mt-5">
+        <h2 class="text-center">Carrito</h2>
+        <div id="carrito" class="row">
+            <!-- Carrito generado por JavaScript -->
+        </div>
+        <div id="totalCuentaDiv" class="my-3">
+            <h3>Total de la Cuenta</h3>
+            <p id="totalCuenta" class="font-weight-bold">$0</p>
+        </div>
+        <div id="propinaSection" class="my-3">
+            <input type="number" id="porcentajePropina" class="form-control mb-2" placeholder="Porcentaje de propina" min="0" max="100">
+            <button id="calcularPropinaBtn" class="btn btn-primary btn-block">Calcular Propina</button>
+        </div>
+        <div id="resultadoPropina" class="alert alert-info mt-3" style="display: none;"></div>
+    </div>
+    <!-- scripts para js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/miarchivo.js"></script>
 </body>
 </html>
+
